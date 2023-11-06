@@ -1,0 +1,26 @@
+<div class="coffee-list">
+
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Región</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let coffee of coffees">
+        <td><strong>{{ coffee.id }}</strong></td>
+        <td>{{ coffee.name }}</td>
+        <td>{{ coffee.type }}</td>
+        <td>{{ coffee.region }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="coffee-types">
+    <p>Total café de origen: {{ countOrigen }} </p>
+    <p>Total café blend: {{ countBlend }} </p>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+.coffee-types {
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  width: auto;
+}
